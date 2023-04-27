@@ -283,4 +283,132 @@ ul {
   background-color: var(--blue-alt-color);
 } */
 /* End Quick Draft Widget */
+
+/* Start Targets */
+.targets .target-row .icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.targets .details {
+  flex: 1;
+}
+
+.targets .details .progress {
+  height: 4px;
+}
+
+.targets .details .progress > span {
+  position: absolute;
+  height: 4px;
+  top: 0;
+  left: 0;
+}
+
+.targets .details .progress > span span {
+  position: absolute;
+  color: white;
+  font-size: 13px;
+  padding: 2px 5px;
+  border-radius: 6px;
+  bottom: 16px;
+  right: -16px;
+}
+
+.targets .details .progress > span span::after {
+  content: "";
+  position: absolute;
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: transparent; */
+  border: 5px solid transparent;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.targets .details .progress > .blue span::after {
+  border-top-color: var(--blue-color);
+}
+
+.targets .details .progress > .orange span::after {
+  border-top-color: var(--orange-color);
+}
+
+.targets .details .progress > .green span::after {
+  border-top-color: var(--green-color);
+}
+
+.blue .icon,
+.blue .progress {
+  background-color: rgb(0 117 255 / 20%);
+}
+
+.orange .icon,
+.orange .progress {
+  background-color: rgb(245 158 11 / 20%);
+}
+
+.green .icon,
+.green .progress {
+  background-color: rgb(34 197 94 / 20%);
+}
+
+/* End Targets */
+
+/* Start Tickets */
+.tickets .card {
+  border: 1px solid #ccc;
+  width: calc(50% - 10px);
+}
+
+@media (max-width: 767px) {
+  .tickets .card {
+    width: 100%;
+  }
+}
+
+/* End Tickets */
+
+/* Start News */
+
+.news .news-row:not(:last-child) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.news .news-row img {
+  width: 100px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.news .news-row .info {
+  flex: 1;
+}
+
+.news .news-row .info h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.news .news-row .time {
+  padding: 6px 10px;
+}
+
+@media (max-width: 767px) {
+  .news .news-row {
+    flex-direction: column;
+  }
+  .news .news-row img {
+    margin: 0 0 15px;
+  }
+  .news .news-row .time {
+    margin-top: 20px;
+  }
+}
+
+/* End News */
 /* End Content */

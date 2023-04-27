@@ -18,6 +18,9 @@
 .space-between {
   justify-content: space-between;
 }
+.f-wrap {
+  flex-wrap: wrap;
+}
 
 .d-grid {
   display: grid;
@@ -67,6 +70,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mb-5 {
+  margin-bottom: 5px;
+}
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -84,14 +90,32 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
 .c-black {
   color: black;
+}
+.c-red {
+  color: var(--red-color);
 }
 .c-white {
   color: white;
 }
-.c-grey {
+.c-gray {
   color: gray;
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
 }
 /* End Colors */
 /* Start Position */
@@ -111,11 +135,17 @@
     text-align: center;
   }
 }
+.fs-13 {
+  font-size: 13px;
+}
 .fs-14 {
   font-size: 14px;
 }
 .fs-15 {
   font-size: 15px;
+}
+.fs-25 {
+  font-size: 25px;
 }
 /* End Font */
 /* Start Border */
