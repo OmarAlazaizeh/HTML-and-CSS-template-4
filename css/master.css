@@ -411,4 +411,21 @@ ul {
 }
 
 /* End News */
+
+/* Start Tasks */
+.tasks .row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.tasks .row .info {
+  flex: 1;
+}
+
+.tasks .row .info h3 {
+  font-size: 16px;
+}
+
+/* End Tasks */
 /* End Content */
