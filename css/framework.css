@@ -52,6 +52,18 @@
 .p-20 {
   padding: 20px;
 }
+.pt-15 {
+  padding-top: 15px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
 .m-0 {
   margin: 0;
 }
@@ -67,8 +79,20 @@
 .mt-10 {
   margin-top: 10px;
 }
+.mt-15 {
+  margin-top: 15px;
+}
 .mt-20 {
   margin-top: 20px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mr-30 {
+  margin-right: 30px;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -81,6 +105,12 @@
 }
 .mb-20 {
   margin-bottom: 20px;
+}
+.ml-30 {
+  margin-left: 30px;
+}
+.ml-40 {
+  margin-left: 40px;
 }
 /* End Padding + Margin */
 /* Start Colors */
@@ -98,6 +128,9 @@
 }
 .bg-green {
   background-color: var(--green-color);
+}
+.bg-red {
+  background-color: var(--red-color);
 }
 .c-black {
   color: black;
@@ -160,6 +193,9 @@
 }
 .rad-10 {
   border-radius: 10px;
+}
+.rad-half {
+  border-radius: 50%;
 }
 /* End Border */
 

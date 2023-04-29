@@ -205,6 +205,7 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -415,8 +416,8 @@ ul {
 /* Start Tasks */
 .tasks .row:not(:last-child) {
   border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .tasks .row .info {
@@ -427,5 +428,128 @@ ul {
   font-size: 16px;
 }
 
+.tasks .done {
+  opacity: 0.3;
+}
+
+.tasks .done h3,
+.tasks .done p {
+  text-decoration: line-through;
+}
+
+.tasks .row .delete {
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+
+.tasks .row i:hover {
+  background-color: white;
+  color: var(--red-color);
+}
+
 /* End Tasks */
+
+/* Start Search Items */
+
+.search-items .item-row .count {
+  padding: 4px 10px;
+}
+/* End Search Items */
+
+/* Start latest uploads */
+.latest-uploads .upload-row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.latest-uploads .upload-row > .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.latest-uploads .upload-row .info {
+  flex-grow: 1;
+}
+
+.latest-uploads .upload-row .size {
+  padding: 4px 10px;
+}
+/* End latest uploads */
+
+/* Start last project progress */
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-color);
+  left: 11px;
+}
+
+.last-project ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  border-radius: 50%;
+  margin-right: 15px;
+  z-index: 1;
+}
+
+.last-project ul li.done::before {
+  background-color: var(--blue-color);
+}
+
+.last-project ul li.current::before {
+  animation: change-color 0.8s infinite alternate;
+}
+
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
+
+.last-project .launch-icon {
+  opacity: 0.1;
+  width: 160px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* End last project progress */
+
+/* Start Reminders */
+.reminders .key {
+  width: 16px;
+  height: 16px;
+}
+
+.reminders li div {
+  border-left: 2px solid;
+}
+
+.reminders li div.blue {
+  border-color: var(--blue-color);
+}
+
+.reminders li div.green {
+  border-color: var(--green-color);
+}
+
+.reminders li div.orange {
+  border-color: var(--orange-color);
+}
+
+.reminders li div.red {
+  border-color: var(--red-color);
+}
+
+/* End Reminders */
 /* End Content */
