@@ -12,6 +12,7 @@
 .d-flex {
   display: flex;
 }
+
 .align-center {
   align-items: center;
 }
@@ -31,6 +32,12 @@
 
 .d-block {
   display: block;
+}
+
+@media (max-width: 767px) {
+  .direction-column-mobile {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 767px) {
@@ -88,6 +95,9 @@
 .mt-25 {
   margin-top: 25px;
 }
+.mr-10 {
+  margin-right: 10px;
+}
 .mr-15 {
   margin-right: 15px;
 }
@@ -105,6 +115,9 @@
 }
 .mb-20 {
   margin-bottom: 20px;
+}
+.ml-15 {
+  margin-left: 15px;
 }
 .ml-30 {
   margin-left: 30px;
@@ -180,6 +193,9 @@
 .fs-15 {
   font-size: 15px;
 }
+.fs-16 {
+  font-size: 16px;
+}
 .fs-25 {
   font-size: 25px;
 }
@@ -199,12 +215,15 @@
 }
 /* End Border */
 
-/* Start Width */
+/* Start Width and Height */
 .w-full {
   width: 100%;
 }
 .w-fit {
   width: fit-content;
+}
+.h-full {
+  height: 100%;
 }
 /* End Width */
 
