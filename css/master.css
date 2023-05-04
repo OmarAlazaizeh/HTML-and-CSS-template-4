@@ -686,9 +686,56 @@ ul {
 /* End porject table */
 
 /* Start settings */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .settings-page {
+    grid-template-columns: minmax(100px, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.settings-page .close-message {
+  resize: none;
+  border: 1px solid #ccc;
+  min-height: 150px;
+}
+
+.settings-page input[type="email"] {
+  display: inline-flex;
+  width: calc(100% - 80px);
+  cursor: no-drop;
+}
+
+.settings-page .sec-box:not(:last-child) {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.settings-page .media-row i {
+  /* position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: gray; */
+}
+
+.settings-page .sec-box:last-of-type a {
+  background-color: #eee;
+  color: black;
+}
+
+/* Start toggle */
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
+  display: none;
 }
 
 .toggle-switch {
@@ -728,6 +775,7 @@ ul {
   color: var(--blue-color);
   left: 50px;
 }
+/* End toggle */
 
 /* End settings */
 /* End Content */
