@@ -984,8 +984,21 @@ ul {
   }
 }
 
+@media (max-width: 767px) {
+  .profile-page .other-data {
+    flex-direction: column;
+  }
+}
+
 .profile-page .other-data .skills-card {
   flex-grow: 1;
+}
+
+@media (max-width: 767px) {
+  .profile-page .other-data .skills-card {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .profile-page .other-data .skills-card ul li {
