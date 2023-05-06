@@ -1019,7 +1019,167 @@ ul {
 .profile-page .other-data .activities {
   flex-grow: 2;
 }
+
+.profile-page .other-data .activities .activity:not(:last-of-type) {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+  .profile-page .other-data .activities .activity {
+    flex-direction: column;
+  }
+}
+
+.profile-page .other-data .activities .activity img {
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 767px) {
+  .profile-page .other-data .activities .activity img {
+    margin: 0 0 10px;
+  }
+  .profile-page .other-data .activities .activity .info {
+    margin: 0 0 15px;
+  }
+  .profile-page .other-data .activities .activity .info span:first-of-type,
+  .profile-page .other-data .activities .activity .data span:first-of-type {
+    margin: 0 0 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-page .other-data .activities .activity img {
+    width: 64px;
+    height: 64px;
+  }
+  .profile-page .other-data .activities .activity .data {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
 /* End Profile Page */
+
+/* Start Projects Page */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin: 10px;
+    gap: 10px;
+  }
+}
+
+.projects-page .project .date {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.projects-page .project h4 {
+  font-weight: normal;
+}
+
+.projects-page .project .team {
+  min-height: 80px;
+  position: relative;
+}
+
+.projects-page .project .team a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: var(--main-transition);
+}
+
+.projects-page .project .team a:nth-of-type(2) {
+  left: 25px;
+}
+
+.projects-page .project .team a:nth-of-type(3) {
+  left: 50px;
+}
+
+.projects-page .project .team a:nth-of-type(4) {
+  left: 75px;
+}
+
+.projects-page .project .team a:nth-of-type(5) {
+  left: 100px;
+}
+
+.projects-page .project .team img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.projects-page .project .team a:hover {
+  z-index: 2;
+}
+
+.projects-page .project .do {
+  justify-content: flex-end;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.projects-page .project .do span {
+  padding: 3px 8px;
+  margin-left: 5px;
+  width: fit-content;
+}
+
+@media (max-width: 767px) {
+  .projects-page .project .do {
+    flex-direction: column;
+  }
+  .projects-page .project .do span {
+    margin: 0 0 15px 0;
+  }
+  .projects-page .project .do span:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.projects-page .project .info {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.projects-page .project .info .prog {
+  height: 8px;
+  width: 260px;
+  background-color: #eee;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .projects-page .project .info {
+    flex-direction: column;
+  }
+  .projects-page .project .info .prog {
+    margin-bottom: 15px;
+  }
+}
+.projects-page .project .info .prog > span {
+  position: absolute;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* End Projects Page */
 
 /* Start toggle */
 .toggle-checkbox {
